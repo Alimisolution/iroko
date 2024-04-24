@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Consultation</title>
+    <style>
+        .container {
+            margin: 7rem auto;
+            text-align: center;
+        }
+
+        form {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        input {
+            width: 250px;
+            padding: .5rem 10px;
+            font-size: 1.1rem;
+        }
+
+        button {
+            text-align: center;
+            background-color: #204A60;
+            border: none;
+            color: white;
+            width: 260px;
+            padding: .7rem 10px;
+            font-size: 1.1rem;
+
+        }
+
+        @media (max-width:500px) {
+            .container h1 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Book a Consultation</h1>
+        <form action="">
+            <input type="text" placeholder="Your Full Name" required>
+            <input type="text" placeholder="Your Phone Number" required>
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
