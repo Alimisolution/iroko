@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book a Consultation</title>
+    <title>School Registration</title>
     <style>
         .container {
             margin: 7rem auto;
@@ -12,16 +12,21 @@
         }
 
         form {
-            margin-top: 2rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            gap: 1rem;
+            gap: 10px;
         }
 
-        input {
+        .input {
             width: 250px;
+            padding: .5rem 10px;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+
+        select {
+            width: 275px;
             padding: .5rem 10px;
             font-size: 1.1rem;
         }
@@ -31,11 +36,13 @@
             background-color: #204A60;
             border: none;
             color: white;
-            width: 260px;
+            width: 280px;
             padding: .7rem 10px;
             font-size: 1.1rem;
-
+            margin: auto;
         }
+
+
 
         @media (max-width:500px) {
             .container h1 {
@@ -47,15 +54,1207 @@
 
 <body>
     <div class="container">
-        <h1>Book a Consultation</h1>
-        <form action="">
-            <input type="text" placeholder="Your Full Name" required>
-            <input type="text" placeholder="Your Phone Number" required>
-            <input type="email" placeholder="Your Email" required>
+        <h1>Registration</h1>
+        <form>
+            <div>
+                <label for="first">First Name: </label>
+                <input class="input" type="text" name="first">
+            </div>
+            <div>
+                <label for="last">Last Name: </label>
+                <input class="input" type="text" name="last">
+            </div>
+            <div>
+                <label for="phone">Phone number: </label>
+                <input class="input" type="number" name="phone">
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input class="input" type="email" name="email">
+            </div>
+            <div>
+                <label for="birth">Date Of Birth: </label>
+                <input class="input" type="date" name="birth">
+            </div>
+            <div>
+                <label for="birth">Home Address: </label>
+                <input class="input" type="text" name="birth">
+            </div>
+            <div>
+                <label for="">State of Origin: </label>
+                <select onchange="toggleLGA(this);" name="state" id="state" class="form-control">
+                    <option value="" selected="selected">- Select -</option>
+                    <option value="Abia">Abia</option>
+                    <option value="Adamawa">Adamawa</option>
+                    <option value="AkwaIbom">AkwaIbom</option>
+                    <option value="Anambra">Anambra</option>
+                    <option value="Bauchi">Bauchi</option>
+                    <option value="Bayelsa">Bayelsa</option>
+                    <option value="Benue">Benue</option>
+                    <option value="Borno">Borno</option>
+                    <option value="Cross River">Cross River</option>
+                    <option value="Delta">Delta</option>
+                    <option value="Ebonyi">Ebonyi</option>
+                    <option value="Edo">Edo</option>
+                    <option value="Ekiti">Ekiti</option>
+                    <option value="Enugu">Enugu</option>
+                    <option value="FCT">FCT</option>
+                    <option value="Gombe">Gombe</option>
+                    <option value="Imo">Imo</option>
+                    <option value="Jigawa">Jigawa</option>
+                    <option value="Kaduna">Kaduna</option>
+                    <option value="Kano">Kano</option>
+                    <option value="Katsina">Katsina</option>
+                    <option value="Kebbi">Kebbi</option>
+                    <option value="Kogi">Kogi</option>
+                    <option value="Kwara">Kwara</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Nasarawa">Nasarawa</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Ogun">Ogun</option>
+                    <option value="Ondo">Ondo</option>
+                    <option value="Osun">Osun</option>
+                    <option value="Oyo">Oyo</option>
+                    <option value="Plateau">Plateau</option>
+                    <option value="Rivers">Rivers</option>
+                    <option value="Sokoto">Sokoto</option>
+                    <option value="Taraba">Taraba</option>
+                    <option value="Yobe">Yobe</option>
+                    <option value="Zamfara">Zamafara</option>
+                </select>
+            </div>
+            <div class="gender">
+                <label>Gender: </label>
+                <input type="radio" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="fe">
+                <label for="male">Female</label>
+            </div>
             <button type="submit">Submit</button>
         </form>
     </div>
 
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://www.diademnbeauty.com/ -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="./Home _ Diademn of Beauty_files/js" data-sdk-integration-source="react-paypal-js"
+        data-react-paypal-script-id="react-paypal-js-iiuovjsckceqfdxxocyiomrdkeaapzqqsqdhpvtpljnzjxioqinnewqmauamscawbbmuqqkckwuwbdjrgwtfpxmepfaomyy"
+        data-uid-auto="uid_ttvlhddsyaqxneqwyztykztvfzprhw"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="https://www.diademnbeauty.com/_next/static/media/07a54048a9278940-s.p.woff2" as="font"
+        crossorigin="" type="font/woff2">
+    <link rel="stylesheet" href="./Home _ Diademn of Beauty_files/8241201f338f56da.css" crossorigin=""
+        data-precedence="next">
+    <link rel="preload" as="script" fetchpriority="low"
+        href="./Home _ Diademn of Beauty_files/webpack-2688caa8abeedf18.js" crossorigin="">
+    <script src="./Home _ Diademn of Beauty_files/fd9d1056-98cab343b7e27a22.js" async="" crossorigin=""></script>
+    <script src="./Home _ Diademn of Beauty_files/2472-b198ebadeea825cb.js" async="" crossorigin=""></script>
+    <script src="./Home _ Diademn of Beauty_files/main-app-eabf6ceaa8888f8a.js" async="" crossorigin=""></script>
+    <script src="./Home _ Diademn of Beauty_files/1424-addc734b9490f537.js" async=""></script>
+    <script src="./Home _ Diademn of Beauty_files/2860-8e754c14d898be02.js" async=""></script>
+    <script src="./Home _ Diademn of Beauty_files/1576-941470524529b0f9.js" async=""></script>
+    <script src="./Home _ Diademn of Beauty_files/layout-c6b3e889a922a5c6.js" async=""></script>
+    <script src="./Home _ Diademn of Beauty_files/9081a741-785f93298a8de1ae.js" async=""></script>
+    <script src="./Home _ Diademn of Beauty_files/39209d7c-6dc01663c56e9101.js" async=""></script>
+    <script src="./Home _ Diademn of Beauty_files/7698-f489364dda204ae5.js" async=""></script>
+    <script src="./Home _ Diademn of Beauty_files/8326-1faec6c28e6e6dfa.js" async=""></script>
+    <script src="./Home _ Diademn of Beauty_files/1829-1062bcf0c2e9d007.js" async=""></script>
+    <script src="./Home _ Diademn of Beauty_files/4872-9aa22f67da4d56c7.js" async=""></script>
+    <title>Home | Diademn of Beauty</title>
+    <meta name="description" content="Diademn of Beauty">
+    <link rel="icon" href="https://www.diademnbeauty.com/favicon.ico" type="image/x-icon" sizes="16x16">
+    <meta name="next-size-adjust">
+    <script src="./Home _ Diademn of Beauty_files/polyfills-c67a75d1b6f99dc8.js" crossorigin="" nomodule=""></script>
+    <style type="text/css">
+        html[dir=ltr],
+        [data-sonner-toaster][dir=ltr] {
+            --toast-icon-margin-start: -3px;
+            --toast-icon-margin-end: 4px;
+            --toast-svg-margin-start: -1px;
+            --toast-svg-margin-end: 0px;
+            --toast-button-margin-start: auto;
+            --toast-button-margin-end: 0;
+            --toast-close-button-start: 0;
+            --toast-close-button-end: unset;
+            --toast-close-button-transform: translate(-35%, -35%)
+        }
+
+        html[dir=rtl],
+        [data-sonner-toaster][dir=rtl] {
+            --toast-icon-margin-start: 4px;
+            --toast-icon-margin-end: -3px;
+            --toast-svg-margin-start: 0px;
+            --toast-svg-margin-end: -1px;
+            --toast-button-margin-start: 0;
+            --toast-button-margin-end: auto;
+            --toast-close-button-start: unset;
+            --toast-close-button-end: 0;
+            --toast-close-button-transform: translate(35%, -35%)
+        }
+
+        [data-sonner-toaster] {
+            position: fixed;
+            width: var(--width);
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            --gray1: hsl(0, 0%, 99%);
+            --gray2: hsl(0, 0%, 97.3%);
+            --gray3: hsl(0, 0%, 95.1%);
+            --gray4: hsl(0, 0%, 93%);
+            --gray5: hsl(0, 0%, 90.9%);
+            --gray6: hsl(0, 0%, 88.7%);
+            --gray7: hsl(0, 0%, 85.8%);
+            --gray8: hsl(0, 0%, 78%);
+            --gray9: hsl(0, 0%, 56.1%);
+            --gray10: hsl(0, 0%, 52.3%);
+            --gray11: hsl(0, 0%, 43.5%);
+            --gray12: hsl(0, 0%, 9%);
+            --border-radius: 8px;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            outline: none;
+            z-index: 999999999
+        }
+
+        [data-sonner-toaster][data-x-position=right] {
+            right: max(var(--offset), env(safe-area-inset-right))
+        }
+
+        [data-sonner-toaster][data-x-position=left] {
+            left: max(var(--offset), env(safe-area-inset-left))
+        }
+
+        [data-sonner-toaster][data-x-position=center] {
+            left: 50%;
+            transform: translate(-50%)
+        }
+
+        [data-sonner-toaster][data-y-position=top] {
+            top: max(var(--offset), env(safe-area-inset-top))
+        }
+
+        [data-sonner-toaster][data-y-position=bottom] {
+            bottom: max(var(--offset), env(safe-area-inset-bottom))
+        }
+
+        [data-sonner-toast] {
+            --y: translateY(100%);
+            --lift-amount: calc(var(--lift) * var(--gap));
+            z-index: var(--z-index);
+            position: absolute;
+            opacity: 0;
+            transform: var(--y);
+            touch-action: none;
+            will-change: transform, opacity, height;
+            transition: transform .4s, opacity .4s, height .4s, box-shadow .2s;
+            box-sizing: border-box;
+            outline: none
+        }
+
+        [data-sonner-toast][data-styled=true] {
+            padding: 16px;
+            background: var(--normal-bg);
+            border: 1px solid var(--normal-border);
+            color: var(--normal-text);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 12px #0000001a;
+            width: var(--width);
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 6px
+        }
+
+        [data-sonner-toast]:focus-visible {
+            box-shadow: 0 4px 12px #0000001a, 0 0 0 2px #0003
+        }
+
+        [data-sonner-toast][data-y-position=top] {
+            top: 0;
+            --y: translateY(-100%);
+            --lift: 1;
+            --lift-amount: calc(1 * var(--gap))
+        }
+
+        [data-sonner-toast][data-y-position=bottom] {
+            bottom: 0;
+            --y: translateY(100%);
+            --lift: -1;
+            --lift-amount: calc(var(--lift) * var(--gap))
+        }
+
+        [data-sonner-toast] [data-description] {
+            font-weight: 400;
+            line-height: 1.4;
+            color: inherit
+        }
+
+        [data-sonner-toast] [data-title] {
+            font-weight: 500;
+            line-height: 1.5;
+            color: inherit
+        }
+
+        [data-sonner-toast] [data-icon] {
+            display: flex;
+            height: 16px;
+            width: 16px;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+            flex-shrink: 0;
+            margin-left: var(--toast-icon-margin-start);
+            margin-right: var(--toast-icon-margin-end)
+        }
+
+        [data-sonner-toast][data-promise=true] [data-icon]>svg {
+            opacity: 0;
+            transform: scale(.8);
+            transform-origin: center;
+            animation: sonner-fade-in .3s ease forwards
+        }
+
+        [data-sonner-toast] [data-icon]>* {
+            flex-shrink: 0
+        }
+
+        [data-sonner-toast] [data-icon] svg {
+            margin-left: var(--toast-svg-margin-start);
+            margin-right: var(--toast-svg-margin-end)
+        }
+
+        [data-sonner-toast] [data-content] {
+            display: flex;
+            flex-direction: column;
+            gap: 2px
+        }
+
+        [data-sonner-toast] [data-button] {
+            border-radius: 4px;
+            padding-left: 8px;
+            padding-right: 8px;
+            height: 24px;
+            font-size: 12px;
+            color: var(--normal-bg);
+            background: var(--normal-text);
+            margin-left: var(--toast-button-margin-start);
+            margin-right: var(--toast-button-margin-end);
+            border: none;
+            cursor: pointer;
+            outline: none;
+            transition: opacity .4s, box-shadow .2s
+        }
+
+        [data-sonner-toast] [data-button]:focus-visible {
+            box-shadow: 0 0 0 2px #0006
+        }
+
+        [data-sonner-toast] [data-button]:first-of-type {
+            margin-left: var(--toast-button-margin-start);
+            margin-right: var(--toast-button-margin-end)
+        }
+
+        [data-sonner-toast] [data-cancel] {
+            color: var(--normal-text);
+            background: rgba(0, 0, 0, .08)
+        }
+
+        [data-sonner-toast][data-theme=dark] [data-cancel] {
+            background: rgba(255, 255, 255, .3)
+        }
+
+        [data-sonner-toast] [data-close-button] {
+            position: absolute;
+            left: var(--toast-close-button-start);
+            right: var(--toast-close-button-end);
+            top: 0;
+            height: 20px;
+            width: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            background: var(--gray1);
+            color: var(--gray12);
+            border: 1px solid var(--gray4);
+            transform: var(--toast-close-button-transform);
+            border-radius: 50%;
+            opacity: 0;
+            cursor: pointer;
+            z-index: 1;
+            transition: opacity .1s, background .2s, border-color .2s
+        }
+
+        [data-sonner-toast] [data-close-button]:focus-visible {
+            box-shadow: 0 4px 12px #0000001a, 0 0 0 2px #0003
+        }
+
+        [data-sonner-toast] [data-disabled=true] {
+            cursor: not-allowed
+        }
+
+        [data-sonner-toast]:hover [data-close-button] {
+            opacity: 1
+        }
+
+        [data-sonner-toast]:focus [data-close-button] {
+            opacity: 1
+        }
+
+        [data-sonner-toast]:focus-within [data-close-button] {
+            opacity: 1
+        }
+
+        [data-sonner-toast]:hover [data-close-button]:hover {
+            background: var(--gray2);
+            border-color: var(--gray5)
+        }
+
+        [data-sonner-toast][data-swiping=true]:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 100%
+        }
+
+        [data-sonner-toast][data-y-position=top][data-swiping=true]:before {
+            bottom: 50%;
+            transform: scaleY(3) translateY(50%)
+        }
+
+        [data-sonner-toast][data-y-position=bottom][data-swiping=true]:before {
+            top: 50%;
+            transform: scaleY(3) translateY(-50%)
+        }
+
+        [data-sonner-toast][data-swiping=false][data-removed=true]:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            transform: scaleY(2)
+        }
+
+        [data-sonner-toast]:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            height: calc(var(--gap) + 1px);
+            bottom: 100%;
+            width: 100%
+        }
+
+        [data-sonner-toast][data-mounted=true] {
+            --y: translateY(0);
+            opacity: 1
+        }
+
+        [data-sonner-toast][data-expanded=false][data-front=false] {
+            --scale: var(--toasts-before) * .05 + 1;
+            --y: translateY(calc(var(--lift-amount) * var(--toasts-before))) scale(calc(-1 * var(--scale)));
+            height: var(--front-toast-height)
+        }
+
+        [data-sonner-toast]>* {
+            transition: opacity .4s
+        }
+
+        [data-sonner-toast][data-expanded=false][data-front=false][data-styled=true]>* {
+            opacity: 0
+        }
+
+        [data-sonner-toast][data-visible=false] {
+            opacity: 0;
+            pointer-events: none
+        }
+
+        [data-sonner-toast][data-mounted=true][data-expanded=true] {
+            --y: translateY(calc(var(--lift) * var(--offset)));
+            height: var(--initial-height)
+        }
+
+        [data-sonner-toast][data-removed=true][data-front=true][data-swipe-out=false] {
+            --y: translateY(calc(var(--lift) * -100%));
+            opacity: 0
+        }
+
+        [data-sonner-toast][data-removed=true][data-front=false][data-swipe-out=false][data-expanded=true] {
+            --y: translateY(calc(var(--lift) * var(--offset) + var(--lift) * -100%));
+            opacity: 0
+        }
+
+        [data-sonner-toast][data-removed=true][data-front=false][data-swipe-out=false][data-expanded=false] {
+            --y: translateY(40%);
+            opacity: 0;
+            transition: transform .5s, opacity .2s
+        }
+
+        [data-sonner-toast][data-removed=true][data-front=false]:before {
+            height: calc(var(--initial-height) + 20%)
+        }
+
+        [data-sonner-toast][data-swiping=true] {
+            transform: var(--y) translateY(var(--swipe-amount, 0px));
+            transition: none
+        }
+
+        [data-sonner-toast][data-swipe-out=true][data-y-position=bottom],
+        [data-sonner-toast][data-swipe-out=true][data-y-position=top] {
+            animation: swipe-out .2s ease-out forwards
+        }
+
+        @keyframes swipe-out {
+            0% {
+                transform: translateY(calc(var(--lift) * var(--offset) + var(--swipe-amount)));
+                opacity: 1
+            }
+
+            to {
+                transform: translateY(calc(var(--lift) * var(--offset) + var(--swipe-amount) + var(--lift) * -100%));
+                opacity: 0
+            }
+        }
+
+        @media (max-width: 600px) {
+            [data-sonner-toaster] {
+                position: fixed;
+                --mobile-offset: 16px;
+                right: var(--mobile-offset);
+                left: var(--mobile-offset);
+                width: 100%
+            }
+
+            [data-sonner-toaster] [data-sonner-toast] {
+                left: 0;
+                right: 0;
+                width: calc(100% - 32px)
+            }
+
+            [data-sonner-toaster][data-x-position=left] {
+                left: var(--mobile-offset)
+            }
+
+            [data-sonner-toaster][data-y-position=bottom] {
+                bottom: 20px
+            }
+
+            [data-sonner-toaster][data-y-position=top] {
+                top: 20px
+            }
+
+            [data-sonner-toaster][data-x-position=center] {
+                left: var(--mobile-offset);
+                right: var(--mobile-offset);
+                transform: none
+            }
+        }
+
+        [data-sonner-toaster][data-theme=light] {
+            --normal-bg: #fff;
+            --normal-border: var(--gray4);
+            --normal-text: var(--gray12);
+            --success-bg: hsl(143, 85%, 96%);
+            --success-border: hsl(145, 92%, 91%);
+            --success-text: hsl(140, 100%, 27%);
+            --error-bg: hsl(359, 100%, 97%);
+            --error-border: hsl(359, 100%, 94%);
+            --error-text: hsl(360, 100%, 45%)
+        }
+
+        [data-sonner-toaster][data-theme=light] [data-sonner-toast][data-invert=true] {
+            --normal-bg: #000;
+            --normal-border: hsl(0, 0%, 20%);
+            --normal-text: var(--gray1)
+        }
+
+        [data-sonner-toaster][data-theme=dark] [data-sonner-toast][data-invert=true] {
+            --normal-bg: #fff;
+            --normal-border: var(--gray3);
+            --normal-text: var(--gray12)
+        }
+
+        [data-sonner-toaster][data-theme=dark] {
+            --normal-bg: #000;
+            --normal-border: hsl(0, 0%, 20%);
+            --normal-text: var(--gray1);
+            --success-bg: hsl(150, 100%, 6%);
+            --success-border: hsl(147, 100%, 12%);
+            --success-text: hsl(150, 86%, 65%);
+            --error-bg: hsl(358, 76%, 10%);
+            --error-border: hsl(357, 89%, 16%);
+            --error-text: hsl(358, 100%, 81%)
+        }
+
+        [data-rich-colors=true] [data-sonner-toast][data-type=success],
+        [data-rich-colors=true] [data-sonner-toast][data-type=success] [data-close-button] {
+            background: var(--success-bg);
+            border-color: var(--success-border);
+            color: var(--success-text)
+        }
+
+        [data-rich-colors=true] [data-sonner-toast][data-type=error],
+        [data-rich-colors=true] [data-sonner-toast][data-type=error] [data-close-button] {
+            background: var(--error-bg);
+            border-color: var(--error-border);
+            color: var(--error-text)
+        }
+
+        .sonner-loading-wrapper {
+            --size: 16px;
+            height: var(--size);
+            width: var(--size);
+            position: absolute;
+            inset: 0;
+            z-index: 10
+        }
+
+        .sonner-loading-wrapper[data-visible=false] {
+            transform-origin: center;
+            animation: sonner-fade-out .2s ease forwards
+        }
+
+        .sonner-spinner {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            height: var(--size);
+            width: var(--size)
+        }
+
+        .sonner-loading-bar {
+            animation: sonner-spin 1.2s linear infinite;
+            background: var(--gray11);
+            border-radius: 6px;
+            height: 8%;
+            left: -10%;
+            position: absolute;
+            top: -3.9%;
+            width: 24%
+        }
+
+        .sonner-loading-bar:nth-child(1) {
+            animation-delay: -1.2s;
+            transform: rotate(.0001deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(2) {
+            animation-delay: -1.1s;
+            transform: rotate(30deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(3) {
+            animation-delay: -1s;
+            transform: rotate(60deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(4) {
+            animation-delay: -.9s;
+            transform: rotate(90deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(5) {
+            animation-delay: -.8s;
+            transform: rotate(120deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(6) {
+            animation-delay: -.7s;
+            transform: rotate(150deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(7) {
+            animation-delay: -.6s;
+            transform: rotate(180deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(8) {
+            animation-delay: -.5s;
+            transform: rotate(210deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(9) {
+            animation-delay: -.4s;
+            transform: rotate(240deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(10) {
+            animation-delay: -.3s;
+            transform: rotate(270deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(11) {
+            animation-delay: -.2s;
+            transform: rotate(300deg) translate(146%)
+        }
+
+        .sonner-loading-bar:nth-child(12) {
+            animation-delay: -.1s;
+            transform: rotate(330deg) translate(146%)
+        }
+
+        @keyframes sonner-fade-in {
+            0% {
+                opacity: 0;
+                transform: scale(.8)
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1)
+            }
+        }
+
+        @keyframes sonner-fade-out {
+            0% {
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            to {
+                opacity: 0;
+                transform: scale(.8)
+            }
+        }
+
+        @keyframes sonner-spin {
+            0% {
+                opacity: 1
+            }
+
+            to {
+                opacity: .15
+            }
+        }
+
+        @media (prefers-reduced-motion) {
+
+            [data-sonner-toast],
+            [data-sonner-toast]>*,
+            .sonner-loading-bar {
+                transition: none !important;
+                animation: none !important
+            }
+        }
+    </style>
+    <link rel="preload" href="https://www.diademnbeauty.com/_next/static/css/1c258675dc250e6c.css" as="style"
+        crossorigin="">
+</head>
+
+<body class="__className_cfacd3"><!--$-->
+    <header class="w-full">
+        <nav class="navbar-container bg-black absolute py-5 lg:py-4">
+            <div class="w-full px-5 md:p-0 md:w-10/12 lg:w-10/12 2xl:w-10/12 mx-auto">
+                <div class="flex justify-between items-center"><a class="w-14 h-10 lg:w-20 lg:h-20 py-7 relative"
+                        href="https://www.diademnbeauty.com/"><img alt="logo" loading="lazy" decoding="async"
+                            data-nimg="fill" class="object-cover object-center"
+                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            sizes="100vw"
+                            srcset="/_next/image?url=%2Flogo.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.webp&amp;w=3840&amp;q=75 3840w"
+                            src="./Home _ Diademn of Beauty_files/logo.jpg"></a>
+                    <div
+                        class="z-50 hidden right-2 bottom-0 top-20 lg:flex h-auto justify-between items-center xl:ml-4">
+                        <ul class="inline-flex">
+                            <li class="font-medium lg:text-lg py-3 rounded-lg mx-3 hover:bg-secondary hover:text-white">
+                                <a class="bg-secondary text-white font-medium lg:text-lg py-3 px-4 w-full rounded-lg hover:bg-secondary hover:text-white"
+                                    href="https://www.diademnbeauty.com/">Home</a></li>
+                            <li class="font-medium lg:text-lg py-3 rounded-lg mx-3 hover:bg-secondary hover:text-white">
+                                <a class="false text-white font-medium lg:text-lg py-3 px-4 w-full rounded-lg hover:bg-secondary hover:text-white"
+                                    href="https://www.diademnbeauty.com/about">About</a></li>
+                            <li class="font-medium lg:text-lg py-3 rounded-lg mx-3 hover:bg-secondary hover:text-white">
+                                <a class="false text-white font-medium lg:text-lg py-3 px-4 w-full rounded-lg hover:bg-secondary hover:text-white"
+                                    href="https://www.diademnbeauty.com/coaching">Coaching</a></li>
+                            <li class="font-medium lg:text-lg py-3 rounded-lg mx-3 hover:bg-secondary hover:text-white">
+                                <a class="false text-white font-medium lg:text-lg py-3 px-4 w-full rounded-lg hover:bg-secondary hover:text-white"
+                                    href="https://www.diademnbeauty.com/store">Shop</a></li>
+                            <li class="font-medium lg:text-lg py-3 rounded-lg mx-3 hover:bg-secondary hover:text-white">
+                                <a class="false text-white font-medium lg:text-lg py-3 px-4 w-full rounded-lg hover:bg-secondary hover:text-white"
+                                    href="https://www.diademnbeauty.com/blogs">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-row items-center"><button type="button"
+                            class="mx-2 mr-3 lg:mr-0 flex items-center p-2 hover:hover:bg-gr lg:text-lgay-50 rounded-md text-white"><svg
+                                stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" class="mr-3" height="20" width="20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg><span class="font-bold">0</span></button><a type="button"
+                            class="hidden lg:block bg-secondary mx-4 font-semibold mr-3 lg:mr-0 items-center py-3 px-5 hover:hover:bg-gr lg:text-lgay-50 rounded-md text-white"
+                            href="https://www.diademnbeauty.com/book-appointment">Book Appointment</a><button
+                            aria-label="menu-btn" type="button" class="menu-btn block lg:hidden" name="menu-btn"><span
+                                class="bar bar1bg-white"></span><span class="bar bar2bg-white"></span><span
+                                class="bar bar3bg-white"></span></button></div>
+                </div>
+            </div>
+            <div class="sidenav hide-nav">
+                <div class="sidenav-content border-t-2 py-3">
+                    <ul class="block">
+                        <li class="font-medium lg:text-lg py-3 rounded-lg mx-3 hover:bg-secondary hover:text-white"><a
+                                class="bg-secondary text-white font-medium lg:text-lg py-3 px-4 w-full rounded-lg hover:bg-secondary hover:text-white"
+                                href="https://www.diademnbeauty.com/">Home</a></li>
+                        <li class="font-medium lg:text-lg py-3 rounded-lg mx-3 hover:bg-secondary hover:text-white"><a
+                                class="false text-white font-medium lg:text-lg py-3 px-4 w-full rounded-lg hover:bg-secondary hover:text-white"
+                                href="https://www.diademnbeauty.com/about">About</a></li>
+                        <li class="font-medium lg:text-lg py-3 rounded-lg mx-3 hover:bg-secondary hover:text-white"><a
+                                class="false text-white font-medium lg:text-lg py-3 px-4 w-full rounded-lg hover:bg-secondary hover:text-white"
+                                href="https://www.diademnbeauty.com/coaching">Coaching</a></li>
+                        <li class="font-medium lg:text-lg py-3 rounded-lg mx-3 hover:bg-secondary hover:text-white"><a
+                                class="false text-white font-medium lg:text-lg py-3 px-4 w-full rounded-lg hover:bg-secondary hover:text-white"
+                                href="https://www.diademnbeauty.com/store">Shop</a></li>
+                        <li class="font-medium lg:text-lg py-3 rounded-lg mx-3 hover:bg-secondary hover:text-white"><a
+                                class="false text-white font-medium lg:text-lg py-3 px-4 w-full rounded-lg hover:bg-secondary hover:text-white"
+                                href="https://www.diademnbeauty.com/blogs">Blogs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div
+            style="position:fixed;top:1px;left:1px;width:1px;height:0;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0;display:none">
+        </div>
+    </header>
+    <main class="w-full">
+        <section id="hero" class="w-full overflow-hidden bg-cover bg-no-repeat bg-top bg-hero-img">
+            <div class="px-6 md:px-0 w-full md:w-10/12 mx-auto py-24 lg:py-36">
+                <div class="flex flex-col items-center justify-center py-10 lg:py-16">
+                    <h1 class="text-5xl lg:text-6xl text-center font-bold py-4 text-white">Empowering Women for a
+                        Brighter Future</h1>
+                    <p
+                        class="font-medium py-7 text-white w-full lg:w-11/12 leading-10 tracking-wide text-center text-lg md:text-xl">
+                        Explore comprehensive courses on perfecting relationships, recognizing true love, and building
+                        healthy partnerships.</p>
+                    <div class="lg:w-8/12 mx-auto w-full text-center">
+                        <div class="pt-6"><a
+                                class="text-lg lg:text-xl mt-5 text-center bg-secondary border-secondary rounded-lg px-9 py-4 font-semibold text-white"
+                                href="https://www.diademnbeauty.com/book-appointment">Connect Now</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-coach" class="w-full bg-white">
+            <div class="px-6 md:px-0 w-full md:w-10/12 mx-auto lg:py-32 py-24">
+                <div class="text-center mb-14"><span class="text-secondary font-bold text-lg">ABOUT ME</span>
+                    <h2 class="text-center font-semibold text-3xl xl:text-5xl py-3">Who I am?</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-9 relative">
+                    <div class="relative p-3 pr-8 lg:max-h-128 lg:h-128 max-h-96 h-96"
+                        style="opacity: 1; left: 0px; position: relative;"><img alt="coach-img" loading="lazy"
+                            decoding="async" data-nimg="fill"
+                            class="w-full lg:max-h-128 lg:h-128 max-h-96 h-96 object-cover object-center rounded-md"
+                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            sizes="100vw"
+                            srcset="/_next/image?url=%2Fdiaderm-beauty-ceo.jpeg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fdiaderm-beauty-ceo.jpeg&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fdiaderm-beauty-ceo.jpeg&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fdiaderm-beauty-ceo.jpeg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fdiaderm-beauty-ceo.jpeg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fdiaderm-beauty-ceo.jpeg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fdiaderm-beauty-ceo.jpeg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fdiaderm-beauty-ceo.jpeg&amp;w=3840&amp;q=75 3840w"
+                            src="./Home _ Diademn of Beauty_files/diaderm-beauty-ceo.jpg"></div>
+                    <div class="flex-1 py-3 lg:pl-8" style="opacity: 1; right: 0px; position: relative;">
+                        <div class="w-full">
+                            <p
+                                class="font-medium pb-5 text-justify text-black w-full leading-10 tracking-wide md:text-xl">
+                                I am Sola, a seasoned counselor whose personal journey from a shy, self-doubting young
+                                woman to a resilient and empowered individual has shaped my approach to helping others
+                                navigate life's challenges.</p>
+                            <p
+                                class="font-medium py-5 text-black w-full leading-10 tracking-wide text-justify md:text-xl">
+                                My early experiences in young love and the subsequent heartbreak profoundly instilled in
+                                me the significance of a healthy self-esteem, and how to manage abandonment and
+                                rejection. These experiences, coupled with my own struggles in marriage and encounters
+                                with financial distress, allowed me to develop a deep empathy and compassion for those
+                                who seek guidance.</p>
+                        </div>
+                        <div class="py-6 text-center lg:text-left"><a
+                                class="bg-secondary py-4 px-5 rounded-md font-medium text-white text-lg"
+                                href="https://www.diademnbeauty.com/about">Read more</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="webinar" class="w-full bg-gray-50">
+            <div class="px-6 md:px-0 w-full md:w-10/12 mx-auto lg:py-32 py-24">
+                <div class="text-center mb-14"><span class="text-secondary font-bold text-lg">WEBINAR</span>
+                    <h2 class="text-center font-semibold text-3xl xl:text-5xl py-3">Explore Free Resources for Enhancing
+                        Relationships and Personal Growth.</h2>
+                </div>
+                <div class="py-5 my-8 w-full max-h-96 h-96 lg:max-h-128 lg:h-128"><video src="" placeholder="hello"
+                        class="rounded bg-black w-full h-full" controls=""></video></div>
+            </div>
+        </section>
+        <section id="clients-reviews" class="w-full lg:py-32 py-24">
+            <div class="px-6 md:px-0 w-full md:w-10/12 mx-auto">
+                <div class="text-center"><span class="text-secondary font-bold">TESTIMONALS</span>
+                    <h2 class="text-center font-semibold text-3xl xl:text-5xl py-3">People share their positive
+                        experiences</h2>
+                </div>
+                <div class="w-full py-4">
+                    <div class="reviews gap-x-4 lg:gap-x-8">
+                        <div class="review border border-gray-300 bg-white rounded-lg mb-8"
+                            style="opacity: 1; left: 0px; position: relative;">
+                            <div class="py-5 px-4">
+                                <blockquote>
+                                    <p class="py-2 text-lg lg:text-xl text-justify">Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Tenetur, aperiam neque. Voluptate numquam a animi
+                                        reprehenderit aliquid, corrupti officia vel provident necessitatibus aut quidem
+                                        neque ipsum doloribus possimus ipsam quos.</p>
+                                </blockquote>
+                                <div class="py-3 flex flex-col"><span class="font-bold text-black text-lg py-2">Johnson
+                                        Marta</span><span>South Africa</span></div>
+                            </div>
+                        </div>
+                        <div class="review border border-gray-300 bg-white rounded-lg mb-8"
+                            style="opacity: 1; left: 0px; position: relative;">
+                            <div class="py-5 px-4">
+                                <blockquote>
+                                    <p class="py-2 text-lg lg:text-xl text-justify">Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Tenetur, aperiam neque. Voluptate numquam a animi
+                                        reprehenderit aliquid, corrupti officia vel provident necessitatibus aut quidem
+                                        neque ipsum doloribus possimus ipsam quos.</p>
+                                </blockquote>
+                                <div class="py-3 flex flex-col"><span class="font-bold text-black text-lg py-2">Joy
+                                        Kelvin</span><span>Nigeria</span></div>
+                            </div>
+                        </div>
+                        <div class="review border border-gray-300 bg-white rounded-lg mb-8"
+                            style="opacity: 1; left: 0px; position: relative;">
+                            <div class="py-5 px-4">
+                                <blockquote>
+                                    <p class="py-2 text-lg lg:text-xl text-justify">Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Tenetur, aperiam neque. Voluptate numquam a animi
+                                        reprehenderit aliquid, corrupti officia vel provident necessitatibus aut quidem
+                                        neque ipsum doloribus possimus ipsam quos.</p>
+                                </blockquote>
+                                <div class="py-3 flex flex-col"><span class="font-bold text-black text-lg py-2">Gabriel
+                                        Jesus</span><span>UK</span></div>
+                            </div>
+                        </div>
+                        <div class="review border border-gray-300 bg-white rounded-lg mb-8"
+                            style="opacity:0;left:-30px;position:relative">
+                            <div class="py-5 px-4">
+                                <blockquote>
+                                    <p class="py-2 text-lg lg:text-xl text-justify">Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Tenetur, aperiam neque. Voluptate numquam a animi
+                                        reprehenderit aliquid, corrupti officia vel provident necessitatibus aut quidem
+                                        neque ipsum doloribus possimus ipsam quos.</p>
+                                </blockquote>
+                                <div class="py-3 flex flex-col"><span class="font-bold text-black text-lg py-2">John
+                                        Oluwasuen</span><span>US</span></div>
+                            </div>
+                        </div>
+                        <div class="review border border-gray-300 bg-white rounded-lg mb-8"
+                            style="opacity:0;left:-30px;position:relative">
+                            <div class="py-5 px-4">
+                                <blockquote>
+                                    <p class="py-2 text-lg lg:text-xl text-justify">Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Tenetur, aperiam neque. Voluptate numquam a animi
+                                        reprehenderit aliquid, corrupti officia vel provident necessitatibus aut quidem
+                                        neque ipsum doloribus possimus ipsam quos.</p>
+                                </blockquote>
+                                <div class="py-3 flex flex-col"><span class="font-bold text-black text-lg py-2">Adidas
+                                        Abbaba</span><span>Kenya</span></div>
+                            </div>
+                        </div>
+                        <div class="review border border-gray-300 bg-white rounded-lg mb-8"
+                            style="opacity:0;left:-30px;position:relative">
+                            <div class="py-5 px-4">
+                                <blockquote>
+                                    <p class="py-2 text-lg lg:text-xl text-justify">Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Tenetur, aperiam neque. Voluptate numquam a animi
+                                        reprehenderit aliquid, corrupti officia vel provident necessitatibus aut quidem
+                                        neque ipsum doloribus possimus ipsam quos.</p>
+                                </blockquote>
+                                <div class="py-3 flex flex-col"><span class="font-bold text-black text-lg py-2">John
+                                        Doe</span><span>Portugal</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="store" class="w-full lg:py-32 py-24 bg-black text-white">
+            <div class="px-6 md:px-0 w-full md:w-10/12 mx-auto">
+                <div class="text-center"><span class="text-secondary font-bold">SHOP</span>
+                    <h2 class="text-center font-semibold text-3xl xl:text-5xl py-3">Pick a book from the store</h2>
+                </div>
+                <div class="py-14 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 lg:gap-x-9 gap-y-9 overflow-hidden"><a
+                        class="w-full h-full relative"
+                        href="https://www.diademnbeauty.com/books/adeb881f-e318-4e9a-9c2b-f0d7eaf19c2e">
+                        <div class="w-full flex flex-col h-full bg-white rounded-md hover:shadow-lg hover:scale-105 relative"
+                            style="opacity: 1; left: 0px; position: relative;">
+                            <div class="w-full max-h-96 h-96 relative border-b border-b-gray-300"><img
+                                    alt="Guide Against Loving the Wrong Man" loading="lazy" decoding="async"
+                                    data-nimg="fill"
+                                    class="max-h-96 object-cover overflow-hidden object-top rounded-t-md h-full w-full"
+                                    style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                                    sizes="100vw"
+                                    srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700770155%2Fdiademn-beauty%2FGuide_Against_Loving_The_Wrong_Man_Cover_nqa5ow.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700770155%2Fdiademn-beauty%2FGuide_Against_Loving_The_Wrong_Man_Cover_nqa5ow.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700770155%2Fdiademn-beauty%2FGuide_Against_Loving_The_Wrong_Man_Cover_nqa5ow.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700770155%2Fdiademn-beauty%2FGuide_Against_Loving_The_Wrong_Man_Cover_nqa5ow.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700770155%2Fdiademn-beauty%2FGuide_Against_Loving_The_Wrong_Man_Cover_nqa5ow.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700770155%2Fdiademn-beauty%2FGuide_Against_Loving_The_Wrong_Man_Cover_nqa5ow.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700770155%2Fdiademn-beauty%2FGuide_Against_Loving_The_Wrong_Man_Cover_nqa5ow.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700770155%2Fdiademn-beauty%2FGuide_Against_Loving_The_Wrong_Man_Cover_nqa5ow.png&amp;w=3840&amp;q=75 3840w"
+                                    src="./Home _ Diademn of Beauty_files/Guide_Against_Loving_The_Wrong_Man_Cover_nqa5ow.png">
+                            </div>
+                            <div
+                                class="w-full rounded-b-md flex flex-col px-4 py-7  text-black justify-between items-start">
+                                <span class="text-2xl font-semibold pb-2">£4.00</span><span
+                                    class="text-xl font-bold py-3">Guide Against Loving the Wrong Man</span></div>
+                        </div>
+                    </a><a class="w-full h-full relative"
+                        href="https://www.diademnbeauty.com/books/492dca2f-ce86-4750-9fdc-167e5b70ec9c">
+                        <div class="w-full flex flex-col h-full bg-white rounded-md hover:shadow-lg hover:scale-105 relative"
+                            style="opacity: 1; left: 0px; position: relative;">
+                            <div class="w-full max-h-96 h-96 relative border-b border-b-gray-300"><img
+                                    alt="Brokenness to Wholeness" loading="lazy" decoding="async" data-nimg="fill"
+                                    class="max-h-96 object-cover overflow-hidden object-top rounded-t-md h-full w-full"
+                                    style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                                    sizes="100vw"
+                                    srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700770111%2Fdiademn-beauty%2FBrokenness_To_Wholeness_Cover_kz1ovt.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700770111%2Fdiademn-beauty%2FBrokenness_To_Wholeness_Cover_kz1ovt.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700770111%2Fdiademn-beauty%2FBrokenness_To_Wholeness_Cover_kz1ovt.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700770111%2Fdiademn-beauty%2FBrokenness_To_Wholeness_Cover_kz1ovt.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700770111%2Fdiademn-beauty%2FBrokenness_To_Wholeness_Cover_kz1ovt.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700770111%2Fdiademn-beauty%2FBrokenness_To_Wholeness_Cover_kz1ovt.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700770111%2Fdiademn-beauty%2FBrokenness_To_Wholeness_Cover_kz1ovt.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700770111%2Fdiademn-beauty%2FBrokenness_To_Wholeness_Cover_kz1ovt.png&amp;w=3840&amp;q=75 3840w"
+                                    src="./Home _ Diademn of Beauty_files/Brokenness_To_Wholeness_Cover_kz1ovt.png">
+                            </div>
+                            <div
+                                class="w-full rounded-b-md flex flex-col px-4 py-7  text-black justify-between items-start">
+                                <span class="text-2xl font-semibold pb-2">£4.00</span><span
+                                    class="text-xl font-bold py-3">Brokenness to Wholeness</span></div>
+                        </div>
+                    </a><a class="w-full h-full relative"
+                        href="https://www.diademnbeauty.com/books/5d130707-3e88-4cd4-ade6-268199ef1f2e">
+                        <div class="w-full flex flex-col h-full bg-white rounded-md hover:shadow-lg hover:scale-105 relative"
+                            style="opacity: 1; left: 0px; position: relative;">
+                            <div class="w-full max-h-96 h-96 relative border-b border-b-gray-300"><img
+                                    alt="SAY NO TO DOMESTIC VIOLENCE ABUSE" loading="lazy" decoding="async"
+                                    data-nimg="fill"
+                                    class="max-h-96 object-cover overflow-hidden object-top rounded-t-md h-full w-full"
+                                    style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                                    sizes="100vw"
+                                    srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700508558%2Fdiademn-beauty%2FDomestic_Abuse_Cover_okusdz.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700508558%2Fdiademn-beauty%2FDomestic_Abuse_Cover_okusdz.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700508558%2Fdiademn-beauty%2FDomestic_Abuse_Cover_okusdz.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700508558%2Fdiademn-beauty%2FDomestic_Abuse_Cover_okusdz.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700508558%2Fdiademn-beauty%2FDomestic_Abuse_Cover_okusdz.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700508558%2Fdiademn-beauty%2FDomestic_Abuse_Cover_okusdz.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700508558%2Fdiademn-beauty%2FDomestic_Abuse_Cover_okusdz.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700508558%2Fdiademn-beauty%2FDomestic_Abuse_Cover_okusdz.png&amp;w=3840&amp;q=75 3840w"
+                                    src="./Home _ Diademn of Beauty_files/Domestic_Abuse_Cover_okusdz.png"></div>
+                            <div
+                                class="w-full rounded-b-md flex flex-col px-4 py-7  text-black justify-between items-start">
+                                <span class="text-2xl font-semibold pb-2">£4.00</span><span
+                                    class="text-xl font-bold py-3">SAY NO TO DOMESTIC VIOLENCE ABUSE</span></div>
+                        </div>
+                    </a><a class="w-full h-full relative"
+                        href="https://www.diademnbeauty.com/books/726b99d1-1992-42f1-a11b-aa3bb8130dea">
+                        <div class="w-full flex flex-col h-full bg-white rounded-md hover:shadow-lg hover:scale-105 relative"
+                            style="opacity: 1; left: 0px; position: relative;">
+                            <div class="w-full max-h-96 h-96 relative border-b border-b-gray-300"><img
+                                    alt="diademn beauty" loading="lazy" decoding="async" data-nimg="fill"
+                                    class="max-h-96 object-cover overflow-hidden object-top rounded-t-md h-full w-full"
+                                    style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                                    sizes="100vw"
+                                    srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700507417%2Fdiademn-beauty%2FDiadem_of_Beauty_Cover_iumfss.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700507417%2Fdiademn-beauty%2FDiadem_of_Beauty_Cover_iumfss.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700507417%2Fdiademn-beauty%2FDiadem_of_Beauty_Cover_iumfss.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700507417%2Fdiademn-beauty%2FDiadem_of_Beauty_Cover_iumfss.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700507417%2Fdiademn-beauty%2FDiadem_of_Beauty_Cover_iumfss.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700507417%2Fdiademn-beauty%2FDiadem_of_Beauty_Cover_iumfss.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700507417%2Fdiademn-beauty%2FDiadem_of_Beauty_Cover_iumfss.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700507417%2Fdiademn-beauty%2FDiadem_of_Beauty_Cover_iumfss.png&amp;w=3840&amp;q=75 3840w"
+                                    src="./Home _ Diademn of Beauty_files/Diadem_of_Beauty_Cover_iumfss.png"></div>
+                            <div
+                                class="w-full rounded-b-md flex flex-col px-4 py-7  text-black justify-between items-start">
+                                <span class="text-2xl font-semibold pb-2">£4.00</span><span
+                                    class="text-xl font-bold py-3">diademn beauty</span></div>
+                        </div>
+                    </a></div>
+                <div class="text-center py-14" style="opacity: 1; top: 0px; position: relative;"><a
+                        class="bg-secondary py-4 px-9 rounded-md font-medium text-white text-lg lg:text-xl"
+                        href="https://www.diademnbeauty.com/store">View All</a></div>
+            </div>
+        </section>
+        <section id="blog-posts" class="w-full lg:py-32 py-24 bg-white text-black">
+            <div class="px-6 md:px-0 w-full md:w-10/12 mx-auto">
+                <div class="text-center"><span class="text-secondary font-bold">BLOGS</span>
+                    <h2 class="text-center font-semibold text-3xl xl:text-5xl py-3">Recent Posts</h2>
+                </div>
+                <div class="py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-12 gap-y-9"><a
+                        href="https://www.diademnbeauty.com/blogs/042ff738-15f3-44aa-97a6-541d9b809729">
+                        <div class="w-full cursor-pointer hover:shadow-2xl hover:shadow-gray-400 hover:scale-105 border-gray-400 border rounded-md"
+                            style="opacity: 1; right: 0px; position: relative;">
+                            <div class="w-full max-h-56 h-56 relative flex flex-col justify-center items-center"><img
+                                    alt="Navigating Relationships with Balance and Personal Wholeness" loading="lazy"
+                                    decoding="async" data-nimg="fill"
+                                    class="max-h-56 object-cover overflow-hidden object-center rounded-t-md h-full w-full"
+                                    style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                                    sizes="100vw"
+                                    srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668867%2Fdiademn-beauty%2Ffeecd1_00f30c6bdf38433499b80cb727c33727_mv2_rcdcxr.webp&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668867%2Fdiademn-beauty%2Ffeecd1_00f30c6bdf38433499b80cb727c33727_mv2_rcdcxr.webp&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668867%2Fdiademn-beauty%2Ffeecd1_00f30c6bdf38433499b80cb727c33727_mv2_rcdcxr.webp&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668867%2Fdiademn-beauty%2Ffeecd1_00f30c6bdf38433499b80cb727c33727_mv2_rcdcxr.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668867%2Fdiademn-beauty%2Ffeecd1_00f30c6bdf38433499b80cb727c33727_mv2_rcdcxr.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668867%2Fdiademn-beauty%2Ffeecd1_00f30c6bdf38433499b80cb727c33727_mv2_rcdcxr.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668867%2Fdiademn-beauty%2Ffeecd1_00f30c6bdf38433499b80cb727c33727_mv2_rcdcxr.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668867%2Fdiademn-beauty%2Ffeecd1_00f30c6bdf38433499b80cb727c33727_mv2_rcdcxr.webp&amp;w=3840&amp;q=75 3840w"
+                                    src="./Home _ Diademn of Beauty_files/feecd1_00f30c6bdf38433499b80cb727c33727_mv2_rcdcxr.jpg">
+                            </div>
+                            <div class="w-full p-4"><span class="font-medium lg:text-lg text-left">Nov 22, 2023</span>
+                                <div class="py-1">
+                                    <h6 class="font-bold py-5 text-xl lg:text-2xl text-left">Navigating Relationships
+                                        with Balance and Personal Wholeness</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </a><a href="https://www.diademnbeauty.com/blogs/653a1091-b4a1-4a9f-9cf7-61c37e8fdf6e">
+                        <div class="w-full cursor-pointer hover:shadow-2xl hover:shadow-gray-400 hover:scale-105 border-gray-400 border rounded-md"
+                            style="opacity: 1; right: 0px; position: relative;">
+                            <div class="w-full max-h-56 h-56 relative flex flex-col justify-center items-center"><img
+                                    alt="Secrets of Unfading Beauty: Nurturing Inner Peace, Joy, and Happiness"
+                                    loading="lazy" decoding="async" data-nimg="fill"
+                                    class="max-h-56 object-cover overflow-hidden object-center rounded-t-md h-full w-full"
+                                    style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                                    sizes="100vw"
+                                    srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668796%2Fdiademn-beauty%2FGetPaidStock.com_-653ab34a341d4_igracm.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668796%2Fdiademn-beauty%2FGetPaidStock.com_-653ab34a341d4_igracm.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668796%2Fdiademn-beauty%2FGetPaidStock.com_-653ab34a341d4_igracm.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668796%2Fdiademn-beauty%2FGetPaidStock.com_-653ab34a341d4_igracm.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668796%2Fdiademn-beauty%2FGetPaidStock.com_-653ab34a341d4_igracm.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668796%2Fdiademn-beauty%2FGetPaidStock.com_-653ab34a341d4_igracm.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668796%2Fdiademn-beauty%2FGetPaidStock.com_-653ab34a341d4_igracm.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668796%2Fdiademn-beauty%2FGetPaidStock.com_-653ab34a341d4_igracm.jpg&amp;w=3840&amp;q=75 3840w"
+                                    src="./Home _ Diademn of Beauty_files/GetPaidStock.jpg"></div>
+                            <div class="w-full p-4"><span class="font-medium lg:text-lg text-left">Nov 22, 2023</span>
+                                <div class="py-1">
+                                    <h6 class="font-bold py-5 text-xl lg:text-2xl text-left">Secrets of Unfading Beauty:
+                                        Nurturing Inner Peace, Joy, and Happiness</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </a><a href="https://www.diademnbeauty.com/blogs/5c0c5115-9d5a-479d-90da-627f036caca6">
+                        <div class="w-full cursor-pointer hover:shadow-2xl hover:shadow-gray-400 hover:scale-105 border-gray-400 border rounded-md"
+                            style="opacity: 1; right: 0px; position: relative;">
+                            <div class="w-full max-h-56 h-56 relative flex flex-col justify-center items-center"><img
+                                    alt="Healing and the Self: Nurturing the Delicate Core" loading="lazy"
+                                    decoding="async" data-nimg="fill"
+                                    class="max-h-56 object-cover overflow-hidden object-center rounded-t-md h-full w-full"
+                                    style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                                    sizes="100vw"
+                                    srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668709%2Fdiademn-beauty%2F1_e2s1jk.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668709%2Fdiademn-beauty%2F1_e2s1jk.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668709%2Fdiademn-beauty%2F1_e2s1jk.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668709%2Fdiademn-beauty%2F1_e2s1jk.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668709%2Fdiademn-beauty%2F1_e2s1jk.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668709%2Fdiademn-beauty%2F1_e2s1jk.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668709%2Fdiademn-beauty%2F1_e2s1jk.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpjpjlifw%2Fimage%2Fupload%2Fv1700668709%2Fdiademn-beauty%2F1_e2s1jk.jpg&amp;w=3840&amp;q=75 3840w"
+                                    src="./Home _ Diademn of Beauty_files/1_e2s1jk.jpg"></div>
+                            <div class="w-full p-4"><span class="font-medium lg:text-lg text-left">Nov 22, 2023</span>
+                                <div class="py-1">
+                                    <h6 class="font-bold py-5 text-xl lg:text-2xl text-left">Healing and the Self:
+                                        Nurturing the Delicate Core</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="text-center py-14" style="opacity: 1; top: 0px; position: relative;"><a
+                        class="bg-secondary py-4 px-9 rounded-md font-medium text-white text-lg lg:text-xl"
+                        href="https://www.diademnbeauty.com/blogs">Explore All Posts</a></div>
+            </div>
+        </section>
+    </main>
+    <footer class="w-full bg-black text-white">
+        <div class="p-6 md:px-0 lg:px-12 w-full md:w-10/12 xl:w-11/12 mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-8 lg:gap-x-10 gap-y-10 w-full py-12">
+                <div>
+                    <h6 class="font-semibold mb-3 text-xl">Quick Links</h6>
+                    <div class="py-2">
+                        <ul class="block">
+                            <li class="py-2 my-1 rounded-lg"><a class="font-medium py-3 rounded-lg lg:text-lg"
+                                    href="https://www.diademnbeauty.com/">Home</a></li>
+                            <li class="py-2 my-1 rounded-lg"><a class="font-medium py-3 rounded-lg lg:text-lg"
+                                    href="https://www.diademnbeauty.com/about">About</a></li>
+                            <li class="py-2 my-1 rounded-lg"><a class="font-medium py-3 rounded-lg lg:text-lg"
+                                    href="https://www.diademnbeauty.com/coaching">Coaching</a></li>
+                            <li class="py-2 my-1 rounded-lg"><a class="font-medium py-3 rounded-lg lg:text-lg"
+                                    href="https://www.diademnbeauty.com/store">Shop</a></li>
+                            <li class="py-2 my-1 rounded-lg"><a class="font-medium py-3 rounded-lg lg:text-lg"
+                                    href="https://www.diademnbeauty.com/blogs">Blogs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="font-semibold mb-3 text-xl">Contact</h6>
+                    <div class="py-2">
+                        <ul class="flex flex-col">
+                            <li class="font-medium py-2 lg:text-lg my-1">+07465988301</li>
+                            <li class="font-medium py-2 lg:text-lg my-1">somo@diadembeauty.com</li>
+                            <li class="font-medium py-2 lg:text-lg my-1">500 Terry Francois Street, 6th Floor. San
+                                Francisco, CA 94158</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="font-semibold mb-3 text-xl">Keep in touch</h6>
+                    <div class="py-2">
+                        <p>Connect and follow me on the social platforms below</p>
+                        <div class="flex justify-start lg:items-center py-9 lg:m-0">
+                            <div class="mr-3"><a target="_blank" href="https://twitter.com/mojoyinen" rel="noreferrer"
+                                    class="text-lg" title="Twitter"><svg stroke="currentColor" fill="currentColor"
+                                        stroke-width="0" viewBox="0 0 512 512" height="20" width="20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                        </path>
+                                    </svg></a></div>
+                            <div class="mx-5"><a target="_blank"
+                                    href="https://instagram.com/soladiadem?igshid=M2RkZGJiMzhjOQ==" rel="noreferrer"
+                                    class="text-lg" title="Instagram"><svg stroke="currentColor" fill="currentColor"
+                                        stroke-width="0" viewBox="0 0 16 16" height="20" width="20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                                        </path>
+                                    </svg></a></div>
+                            <div class="mx-5"><a target="_blank"
+                                    href="https://www.tiktok.com/@diademofbeauty68?_t=8hRmYOTocJk&amp;_r=1"
+                                    rel="noreferrer" class="text-lg" title="Instagram"><svg stroke="currentColor"
+                                        fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="20" width="20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z">
+                                        </path>
+                                    </svg></a></div>
+                            <div class="mx-5"><a target="_blank" href="https://youtu.be/rB7mxA8GKAU" rel="noreferrer"
+                                    class="text-lg" title="Youtube"><svg stroke="currentColor" fill="currentColor"
+                                        stroke-width="0" viewBox="0 0 16 16" height="20" width="20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z">
+                                        </path>
+                                    </svg></a></div>
+                            <div class="mx-5"><a target="_blank" href="https://www.facebook.com/soladiadem"
+                                    title="Facebook" class="text-lg"><svg stroke="currentColor" fill="currentColor"
+                                        stroke-width="0" viewBox="0 0 320 512" height="20" width="20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                        </path>
+                                    </svg></a></div>
+                            <div class="mx-5"><a target="_blank" href="http://www.linkedin.com/in/sola-o"
+                                    title="Linkedin" class="text-lg"><svg stroke="currentColor" fill="currentColor"
+                                        stroke-width="0" viewBox="0 0 448 512" height="20" width="20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                                        </path>
+                                    </svg></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex justify-center items-center border-t border-gray-300 py-9"><span
+                class="font-medium text-center lg:text-left">© <!-- -->2024<!-- --> Diademn of Beauty. All Right
+                Reserved</span></div>
+    </footer><!--/$-->
+    <script src="./Home _ Diademn of Beauty_files/webpack-2688caa8abeedf18.js" crossorigin="" async=""></script>
+    <script>(self.__next_f = self.__next_f || []).push([0]); self.__next_f.push([2, null])</script>
+    <script>self.__next_f.push([1, "1:HL[\"/_next/static/media/07a54048a9278940-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n2:HL[\"/_next/static/css/8241201f338f56da.css\",\"style\",{\"crossOrigin\":\"\"}]\n0:\"$L3\"\n"])</script>
+    <script>self.__next_f.push([1, "4:I[3728,[],\"\"]\n6:I[9928,[],\"\"]\n7:I[6533,[\"1424\",\"static/chunks/1424-addc734b9490f537.js\",\"2860\",\"static/chunks/2860-8e754c14d898be02.js\",\"1576\",\"static/chunks/1576-941470524529b0f9.js\",\"3185\",\"static/chunks/app/layout-c6b3e889a922a5c6.js\"],\"\"]\n8:I[6954,[],\"\"]\n9:I[7264,[],\"\"]\n"])</script>
+    <script>self.__next_f.push([1, "a:I[8326,[\"8447\",\"static/chunks/00cbbcb7-405e72faf0ff5ac7.js\",\"2420\",\"static/chunks/9081a741-785f93298a8de1ae.js\",\"6652\",\"static/chunks/8e68d877-1c4cf19fe792cdc3.js\",\"2306\",\"static/chunks/39209d7c-6dc01663c56e9101.js\",\"7698\",\"static/chunks/7698-f489364dda204ae5.js\",\"8920\",\"static/chunks/8920-9b2122a9f9391dce.js\",\"8326\",\"static/chunks/8326-1faec6c28e6e6dfa.js\",\"413\",\"static/chunks/413-0a29f0426ac40c56.js\",\"1829\",\"static/chunks/1829-1062bcf0c2e9d007.js\",\"7870\",\"static/chunks/7870-817201691f364f15.js\",\"4872\",\"static/chunks/4872-9aa22f67da4d56c7.js\",\"1931\",\"static/chunks/app/page-b86fc0d7fc0635c2.js\"],\"\"]\n"])</script>
+    <script>self.__next_f.push([1, "3:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/8241201f338f56da.css\",\"precedence\":\"next\",\"crossOrigin\":\"\"}]],[\"$\",\"$L4\",null,{\"buildId\":\"lx8Q0QMMJ8ZMQLsz2ZP5M\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/\",\"initialTree\":[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],\"initialHead\":[false,\"$L5\"],\"globalErrorComponent\":\"$6\",\"children\":[null,[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"__className_cfacd3\",\"children\":[\"$\",\"$L7\",null,{\"children\":[\"$\",\"$L8\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"loading\":[\"$\",\"div\",null,{\"className\":\"w-full h-full flex items-center justify-center z-100\",\"children\":[[\"$\",\"svg\",null,{\"stroke\":\"currentColor\",\"fill\":\"none\",\"strokeWidth\":\"0\",\"viewBox\":\"0 0 24 24\",\"className\":\"animate-spin\",\"children\":[\"$undefined\",[[\"$\",\"path\",\"0\",{\"opacity\":\"0.2\",\"fillRule\":\"evenodd\",\"clipRule\":\"evenodd\",\"d\":\"M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z\",\"fill\":\"currentColor\",\"children\":\"$undefined\"}],[\"$\",\"path\",\"1\",{\"d\":\"M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z\",\"fill\":\"currentColor\",\"children\":\"$undefined\"}]]],\"style\":{\"color\":\"$undefined\"},\"height\":28,\"width\":28,\"xmlns\":\"http://www.w3.org/2000/svg\"}],[\"$\",\"span\",null,{\"className\":\"font-medium pl-3\",\"children\":\"Loading...\"}]]}],\"loadingStyles\":[],\"loadingScripts\":[],\"hasLoading\":true,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L9\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[\"$\",\"div\",null,{\"className\":\"w-full h-full flex items-center justify-center py-32\",\"children\":[\"$\",\"div\",null,{\"className\":\"text-center py-20\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"font-bold text-4xl\",\"children\":\"Oops! Not Found\"}],[\"$\",\"p\",null,{\"className\":\"py-2 font-medium text-lg my-2\",\"children\":\"The page you are looking doesn't exist or has been removed.\"}],[\"$\",\"$La\",null,{\"href\":\"/\",\"className\":\"mt-3 py-4 px-7 bg-secondary hover:bg-red-700 text-sm font-medium text-white rounded-lg shadow-md\",\"children\":\"Go to Homepage\"}]]}]}],\"notFoundStyles\":[],\"childProp\":{\"current\":[\"$Lb\",\"$Lc\",null],\"segment\":\"__PAGE__\"},\"styles\":null}]}]}]}],null]}]]\n"])</script>
+    <script>self.__next_f.push([1, "5:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"Home | Diademn of Beauty\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"Diademn of Beauty\"}],[\"$\",\"link\",\"4\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"16x16\"}],[\"$\",\"meta\",\"5\",{\"name\":\"next-size-adjust\"}]]\nb:null\n"])</script>
+    <script>self.__next_f.push([1, "d:I[9543,[\"8447\",\"static/chunks/00cbbcb7-405e72faf0ff5ac7.js\",\"2420\",\"static/chunks/9081a741-785f93298a8de1ae.js\",\"6652\",\"static/chunks/8e68d877-1c4cf19fe792cdc3.js\",\"2306\",\"static/chunks/39209d7c-6dc01663c56e9101.js\",\"7698\",\"static/chunks/7698-f489364dda204ae5.js\",\"8920\",\"static/chunks/8920-9b2122a9f9391dce.js\",\"8326\",\"static/chunks/8326-1faec6c28e6e6dfa.js\",\"413\",\"static/chunks/413-0a29f0426ac40c56.js\",\"1829\",\"static/chunks/1829-1062bcf0c2e9d007.js\",\"7870\",\"static/chunks/7870-817201691f364f15.js\",\"4872\",\"static/chunks/4872-9aa22f67da4d56c7.js\",\"1931\",\"static/chunks/app/page-b86fc0d7fc0635c2.js\"],\"\"]\n"])</script>
+    <script>self.__next_f.push([1, "e:I[3857,[\"8447\",\"static/chunks/00cbbcb7-405e72faf0ff5ac7.js\",\"2420\",\"static/chunks/9081a741-785f93298a8de1ae.js\",\"6652\",\"static/chunks/8e68d877-1c4cf19fe792cdc3.js\",\"2306\",\"static/chunks/39209d7c-6dc01663c56e9101.js\",\"7698\",\"static/chunks/7698-f489364dda204ae5.js\",\"8920\",\"static/chunks/8920-9b2122a9f9391dce.js\",\"8326\",\"static/chunks/8326-1faec6c28e6e6dfa.js\",\"413\",\"static/chunks/413-0a29f0426ac40c56.js\",\"1829\",\"static/chunks/1829-1062bcf0c2e9d007.js\",\"7870\",\"static/chunks/7870-817201691f364f15.js\",\"4872\",\"static/chunks/4872-9aa22f67da4d56c7.js\",\"1931\",\"static/chunks/app/page-b86fc0d7fc0635c2.js\"],\"\"]\n"])</script>
+    <script>self.__next_f.push([1, "f:I[6059,[\"8447\",\"static/chunks/00cbbcb7-405e72faf0ff5ac7.js\",\"2420\",\"static/chunks/9081a741-785f93298a8de1ae.js\",\"6652\",\"static/chunks/8e68d877-1c4cf19fe792cdc3.js\",\"2306\",\"static/chunks/39209d7c-6dc01663c56e9101.js\",\"7698\",\"static/chunks/7698-f489364dda204ae5.js\",\"8920\",\"static/chunks/8920-9b2122a9f9391dce.js\",\"8326\",\"static/chunks/8326-1faec6c28e6e6dfa.js\",\"413\",\"static/chunks/413-0a29f0426ac40c56.js\",\"1829\",\"static/chunks/1829-1062bcf0c2e9d007.js\",\"7870\",\"static/chunks/7870-817201691f364f15.js\",\"4872\",\"static/chunks/4872-9aa22f67da4d56c7.js\",\"1931\",\"static/chunks/app/page-b86fc0d7fc0635c2.js\"],\"\"]\n"])</script>
+    <script>self.__next_f.push([1, "10:I[4964,[\"8447\",\"static/chunks/00cbbcb7-405e72faf0ff5ac7.js\",\"2420\",\"static/chunks/9081a741-785f93298a8de1ae.js\",\"6652\",\"static/chunks/8e68d877-1c4cf19fe792cdc3.js\",\"2306\",\"static/chunks/39209d7c-6dc01663c56e9101.js\",\"7698\",\"static/chunks/7698-f489364dda204ae5.js\",\"8920\",\"static/chunks/8920-9b2122a9f9391dce.js\",\"8326\",\"static/chunks/8326-1faec6c28e6e6dfa.js\",\"413\",\"static/chunks/413-0a29f0426ac40c56.js\",\"1829\",\"static/chunks/1829-1062bcf0c2e9d007.js\",\"7870\",\"static/chunks/7870-817201691f364f15.js\",\"4872\",\"static/chunks/4872-9aa22f67da4d56c7.js\",\"1931\",\"static/chunks/app/page-b86fc0d7fc0635c2.js\"],\"\"]\n"])</script>
+    <script>self.__next_f.push([1, "11:I[5418,[\"8447\",\"static/chunks/00cbbcb7-405e72faf0ff5ac7.js\",\"2420\",\"static/chunks/9081a741-785f93298a8de1ae.js\",\"6652\",\"static/chunks/8e68d877-1c4cf19fe792cdc3.js\",\"2306\",\"static/chunks/39209d7c-6dc01663c56e9101.js\",\"7698\",\"static/chunks/7698-f489364dda204ae5.js\",\"8920\",\"static/chunks/8920-9b2122a9f9391dce.js\",\"8326\",\"static/chunks/8326-1faec6c28e6e6dfa.js\",\"413\",\"static/chunks/413-0a29f0426ac40c56.js\",\"1829\",\"static/chunks/1829-1062bcf0c2e9d007.js\",\"7870\",\"static/chunks/7870-817201691f364f15.js\",\"4872\",\"static/chunks/4872-9aa22f67da4d56c7.js\",\"1931\",\"static/chunks/app/page-b86fc0d7fc0635c2.js\"],\"\"]\n"])</script>
+    <script>self.__next_f.push([1, "15:I[9585,[\"8447\",\"static/chunks/00cbbcb7-405e72faf0ff5ac7.js\",\"2420\",\"static/chunks/9081a741-785f93298a8de1ae.js\",\"6652\",\"static/chunks/8e68d877-1c4cf19fe792cdc3.js\",\"2306\",\"static/chunks/39209d7c-6dc01663c56e9101.js\",\"7698\",\"static/chunks/7698-f489364dda204ae5.js\",\"8920\",\"static/chunks/8920-9b2122a9f9391dce.js\",\"8326\",\"static/chunks/8326-1faec6c28e6e6dfa.js\",\"413\",\"static/chunks/413-0a29f0426ac40c56.js\",\"1829\",\"static/chunks/1829-1062bcf0c2e9d007.js\",\"7870\",\"static/chunks/7870-817201691f364f15.js\",\"4872\",\"static/chunks/4872-9aa22f67da4d56c7.js\",\"1931\",\"static/chunks/app/page-b86fc0d7fc0635c2.js\"],\"\"]\n"])</script>
+    <script>self.__next_f.push([1, "12:T21b7,"])</script>
+    <script>self.__next_f.push([1, "\u003cp dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\" id=\"isPasted\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eIn the intricate tapestry of life, relationships are the threads that weave our story. Whether they're familial, romantic, or friendships, relationships play a pivotal role in our well-being and personal growth. To create harmonious and fulfilling connections, we must learn to navigate them with balance and a sense of personal wholeness.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eThe Foundation of Personal Wholeness\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eBefore we can hope to have balanced and healthy relationships, we must focus on our own personal wholeness. This means understanding ourselves, our values, our worth and our boundaries. It's about embracing our imperfections and building a solid foundation of self-love and self-acceptance.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e1. Self-Awareness: A key component of personal wholeness is self-awareness. We must understand our own needs, desires, and limitations. This self-awareness allows us to communicate our expectations clearly in our relationships. It allows us to know who we are and confront issues with this understanding.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e2. Self-Love: It's essential to cultivate self-love and self-compassion. When we love and care for ourselves, we're better equipped to offer love and care to others without depleting our own emotional reserves.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e3. Emotional Healing: Personal wholeness often involves addressing past wounds and traumas. These experiences can affect our interactions with others. Emotional healing is a journey, but it's one that empowers us to connect with others more authentically and genuinely.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eBalance in Relationships\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eOnce we've established a sense of personal wholeness, we can approach relationships with the aim of maintaining balance. This balance is critical to ensure that relationships remain healthy and fulfilling. The following can help to build and maintain balance in relationships:\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e1. Setting Boundaries: Healthy boundaries are the cornerstone of balanced relationships. Boundaries define what is acceptable and what isn't. They protect our emotional well-being and prevent us from becoming overly enmeshed in another person's issues.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e2. Communication: Open and honest communication is vital. It's essential to express your needs and feelings, and equally important to listen actively to your partner's or friend's perspective. This two-way communication fosters mutual understanding and empathy.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e3. Reciprocity: Balance in relationships means that both parties involved give something. Both parties should feel that their needs are being met and their efforts appreciated. A one-sided relationship, where one person gives and the other only takes, is unsustainable in the long term.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e4. Respecting Individuality: Balanced relationships respect individuality. Each person in a relationship remains their own distinct being. While you share your life with someone, it's important to honor their unique identity and allow them to flourish alongside your own growth.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eConclusion\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eBalancing relationships within the context of personal wholeness is a lifelong journey. It's a delicate journey toward self-discovery, self-love, and mutual respect. As we continue to grow and evolve, our relationships evolve with us. Remember that achieving balance is not about perfect harmony at all times. It's about understanding that relationships have their ups and downs, and that's perfectly normal. What matters is how we navigate those ups and downs with empathy, open communication, and respect for ourselves and those we care about.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eIn embracing personal wholeness and seeking balance in our relationships, we can create a fulfilling and harmonious connection with those who enrich our lives. The journey may have its challenges, but the rewards of meaningful, balanced relationships are immeasurable.\u003c/span\u003e\u003c/p\u003e"])</script>
+    <script>self.__next_f.push([1, "13:T24a1,"])</script>
+    <script>self.__next_f.push([1, "\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\" id=\"isPasted\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eIn its purest form, beauty is not something that can be surgically enhanced. It's not skin-deep, but soul-deep. The secrets of unfading beauty lie within, rooted in the essence of inner peace, joy, and happiness. Let's embark on a journey to discover these timeless secrets and unlock the beauty that radiates from within.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eSome Tips on Cultivating Inner Peace\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e1. Self-Acceptance:The foundation of inner beauty is self-acceptance. Embrace your flaws, quirks, and imperfections, for they make you uniquely beautiful. When you accept yourself, you emit a genuine aura of confidence that is undeniably attractive.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e2. Mindfulness: Practice mindfulness to stay present and fully engage with the world around you. It helps alleviate stress and anxiety, allowing the inner peace to shine through. A calm mind approaches issues from much more improved perspectives..\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e3. Gratitude: Be deliberate about gratitude. Gratitude fosters contentment, and contentment brings inner peace. When you're at peace with yourself and the world, your inner beauty becomes more vibrant.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eNurturing Joy\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e1. Pursue Passions: Engage in activities that light up your soul. When you do what you love, your enthusiasm and joy become infectious. This joy is the kind of beauty that brightens the room. There is more energy in your walk when you feel good about what you do.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e2. Cultivate Relationships: Meaningful connections with friends and family can fill your life with laughter and joy. Sharing moments of joy with loved ones enhances your inner beauty and radiance.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e3. Acts of Kindness: Being kind to others not only spreads joy but also elevates your own spirit. Acts of kindness generate a warm, beautiful glow that surrounds you.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eEmbracing Happiness\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e1. Find Purpose: Seek a sense of purpose and meaning in life. Happiness often follows when you feel that your life has direction. Purpose-driven individuals exude a special kind of beauty that comes from a deep sense of fulfillment.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e2. Resilience: Life's challenges are inevitable, but how you face them matters. Resilience in the face of adversity demonstrates strength and beauty. It's the kind of beauty that inspires others.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e3. Laughter: Don't underestimate the power of laughter. It's an elixir of happiness. Surround yourself with humor, and your inner beauty will light up. Laughter helps youtube let go of stress and embrace the joys of the moment.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eThe Beauty of Balance\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eUnfading beauty is not about unceasing positivity or avoiding the dark moments of life. It's about finding a balance that allows your inner peace, joy, and happiness to coexist with your experiences, including the less pleasant ones. Incorporate self-care practices into your routine, such as meditation, exercise, and spending time in nature. These activities help maintain your emotional and mental well-being, creating a harmony within you that makes you glow..\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eConclusion\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eThe secrets of unfading beauty are not found in the latest makeup trend or skincare routine. They are not about striving for an unattainable standard of physical perfection. True beauty is an inner radiance that emanates from the depths of your being. Cultivating inner peace, nurturing joy, and embracing happiness are the cornerstones of this inner beauty. When you prioritize these aspects of your life, you'll find that your beauty is not just a facade; it's a reflection of your inner world, glowing brightly for all to see.\u003c/span\u003e\u003c/p\u003e"])</script>
+    <script>self.__next_f.push([1, "14:T291f,"])</script>
+    <script>self.__next_f.push([1, "\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\" id=\"isPasted\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eThe self, that intricate mosaic of emotions, experiences, and identity, is a fragile construct. Just like the delicate petals of a flower, the self can withstand a great deal but, when faced with unrelenting storms, it risks breaking. Apart from being the agency of maintenance against constant contact with the outside world, healing is the sanctuary that safeguards this fragile self, ensuring it remains intact and resilient in the face of life's many challenges.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eThe Fragility of the Self\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eImagine the self as a vase, ornate yet delicate. Our journey through life is akin to placing this vase in a world filled with bumps, sharp edges, and unexpected turbulence. In our formative years, the words we hear, the relationships we form, and the events we experience subtly etch into this vase, shaping our sense of self.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eThe fragility of the self is such that negative experiences, criticism, trauma, or even the simple passage of time can leave their marks. Just like a vase can chip or crack, our self can become bruised, leading to self-doubt, anxiety, and depression. It's in these moments that healing becomes our most profound need.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eThe Role of Healing\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eHealing is not merely the process of mending what's broken; it's also about fortifying the self to withstand future challenges. Just as a skilled artisan repairs a chipped vase, healing involves acknowledging our vulnerabilities, addressing past wounds, and nurturing the self back to wholeness.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eHere's why healing is essential in protecting the fragile self:\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e1. Acknowledgment of Pain: Healing begins with acknowledging the wounds we carry. This act of recognition is transformative in itself, as it allows us to embrace our vulnerability and take the first step towards recovery. Acknowledgement of pain is the beginning of healing.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e2. \u0026nbsp;Releasing Emotional Baggage: \u0026nbsp;When we carry emotional baggage from the past, it burdens the self. Healing empowers us to release these burdens, allowing the self to breathe freely and regain its equilibrium.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e3. \u0026nbsp;Self-Acceptance: The process of healing often leads to self-discovery and self-acceptance. Embracing our imperfections, scars, and unique attributes helps us build a more resilient self-image.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e4. Resilience Building: \u0026nbsp;Healing equips the self with the tools needed to confront future challenges. Just as mended pottery can be stronger at the mended points, a healed self is often more resilient. Building resilience is pivotal to strengthening the healing process.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003e5. Restoring Balance: The delicate self, once healed, returns to a state of balance. This balance is vital for mental and emotional well-being, enabling us to navigate the ups and downs of life.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eHealing is a Continuum\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eHealing is not a destination but a journey. The fragile self is an ongoing work, constantly influenced by the brushstrokes of our experiences. Just as a skilled artist continually refines their masterpiece, we must continually engage in self-healing to maintain our resilience. Healing takes many forms. It may involve seeking professional counseling, talking with trusted friends, or pursuing self-help practices such as meditation and journaling. The path to healing is personal, and it's essential to find what works best for you.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eConclusion\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eThe self, like fine china, is a masterpiece of delicate beauty. It carries the imprints of our life's experiences, both positive and negative. It is in our best interest to protect and nurture this fragile self, ensuring that it remains whole and resilient. Wholeness is the refusal to crack under pressure.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eHealing is the guardian of the self. It serves as the gentle hand that restores the self's natural brilliance when it's been dimmed by life's challenges. By acknowledging our vulnerabilities, releasing emotional baggage, and cultivating self-acceptance, we provide the self with the resilience to flourish despite the inevitable storms.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"\u003e\u003cspan style=\"font-size:11pt;font-family:Arial,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"\u003eAs we embark on the lifelong journey of healing, we must remember that we hold the brush in the creation of our self's masterpiece. With patience, care, and self-compassion, we can ensure that our self remains a thing of beauty, even in the face of adversity, and that this self is protected in a shield.\u003c/span\u003e\u003c/p\u003e"])</script>
+    <script>self.__next_f.push([1, "c:[[\"$\",\"$Ld\",null,{}],[\"$\",\"main\",null,{\"className\":\"w-full\",\"children\":[[\"$\",\"section\",null,{\"id\":\"hero\",\"className\":\"w-full overflow-hidden bg-cover bg-no-repeat bg-top bg-hero-img\",\"children\":[\"$\",\"div\",null,{\"className\":\"px-6 md:px-0 w-full md:w-10/12 mx-auto py-24 lg:py-36\",\"children\":[\"$\",\"div\",null,{\"className\":\"flex flex-col items-center justify-center py-10 lg:py-16\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-5xl lg:text-6xl text-center font-bold py-4 text-white\",\"children\":\"Empowering Women for a Brighter Future\"}],[\"$\",\"p\",null,{\"className\":\"font-medium py-7 text-white w-full lg:w-11/12 leading-10 tracking-wide text-center text-lg md:text-xl\",\"children\":\"Explore comprehensive courses on perfecting relationships, recognizing true love, and building healthy partnerships.\"}],[\"$\",\"div\",null,{\"className\":\"lg:w-8/12 mx-auto w-full text-center\",\"children\":[\"$\",\"div\",null,{\"className\":\"pt-6\",\"children\":[\"$\",\"$La\",null,{\"href\":\"/book-appointment\",\"className\":\"text-lg lg:text-xl mt-5 text-center bg-secondary border-secondary rounded-lg px-9 py-4 font-semibold text-white\",\"children\":\"Connect Now\"}]}]}]]}]}]}],[\"$\",\"$Le\",null,{}],[\"$\",\"section\",null,{\"id\":\"webinar\",\"className\":\"w-full bg-gray-50\",\"children\":[\"$\",\"div\",null,{\"className\":\"px-6 md:px-0 w-full md:w-10/12 mx-auto lg:py-32 py-24\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-center mb-14\",\"children\":[[\"$\",\"span\",null,{\"className\":\"text-secondary font-bold text-lg\",\"children\":\"WEBINAR\"}],[\"$\",\"h2\",null,{\"className\":\"text-center font-semibold text-3xl xl:text-5xl py-3\",\"children\":\"Explore Free Resources for Enhancing Relationships and Personal Growth.\"}]]}],[\"$\",\"div\",null,{\"className\":\"py-5 my-8 w-full max-h-96 h-96 lg:max-h-128 lg:h-128\",\"children\":[\"$\",\"video\",null,{\"src\":\"\",\"placeholder\":\"hello\",\"className\":\"rounded bg-black w-full h-full\",\"autoPlay\":false,\"controls\":true}]}]]}]}],[\"$\",\"$Lf\",null,{}],[\"$\",\"$L10\",null,{\"books\":[{\"id\":\"adeb881f-e318-4e9a-9c2b-f0d7eaf19c2e\",\"title\":\"Guide Against Loving the Wrong Man\",\"price\":\"4\",\"cover_image_url\":\"https://res.cloudinary.com/dpjpjlifw/image/upload/v1700770155/diademn-beauty/Guide_Against_Loving_The_Wrong_Man_Cover_nqa5ow.png\",\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris\",\"createdAt\":\"$D2023-11-23T20:09:15.584Z\",\"updatedAt\":\"$D2023-11-23T20:09:15.584Z\"},{\"id\":\"492dca2f-ce86-4750-9fdc-167e5b70ec9c\",\"title\":\"Brokenness to Wholeness\",\"price\":\"4\",\"cover_image_url\":\"https://res.cloudinary.com/dpjpjlifw/image/upload/v1700770111/diademn-beauty/Brokenness_To_Wholeness_Cover_kz1ovt.png\",\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris\",\"createdAt\":\"$D2023-11-23T20:08:30.936Z\",\"updatedAt\":\"$D2023-11-23T20:08:30.936Z\"},{\"id\":\"5d130707-3e88-4cd4-ade6-268199ef1f2e\",\"title\":\"SAY NO TO DOMESTIC VIOLENCE ABUSE\",\"price\":\"4\",\"cover_image_url\":\"https://res.cloudinary.com/dpjpjlifw/image/upload/v1700508558/diademn-beauty/Domestic_Abuse_Cover_okusdz.png\",\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris \",\"createdAt\":\"$D2023-11-20T19:29:18.924Z\",\"updatedAt\":\"$D2023-11-20T19:29:18.924Z\"},{\"id\":\"726b99d1-1992-42f1-a11b-aa3bb8130dea\",\"title\":\"diademn beauty\",\"price\":\"4\",\"cover_image_url\":\"https://res.cloudinary.com/dpjpjlifw/image/upload/v1700507417/diademn-beauty/Diadem_of_Beauty_Cover_iumfss.png\",\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris \",\"createdAt\":\"$D2023-11-20T19:10:17.623Z\",\"updatedAt\":\"$D2023-11-20T19:10:17.623Z\"}]}],[\"$\",\"$L11\",null,{\"posts\":[{\"id\":\"042ff738-15f3-44aa-97a6-541d9b809729\",\"title\":\"Navigating Relationships with Balance and Personal Wholeness\",\"description\":\"$12\",\"cover_image_url\":\"https://res.cloudinary.com/dpjpjlifw/image/upload/v1700668867/diademn-beauty/feecd1_00f30c6bdf38433499b80cb727c33727_mv2_rcdcxr.webp\",\"createdAt\":\"$D2023-11-22T16:01:06.486Z\",\"updatedAt\":\"$D2023-11-22T16:01:06.486Z\"},{\"id\":\"653a1091-b4a1-4a9f-9cf7-61c37e8fdf6e\",\"title\":\"Secrets of Unfading Beauty: Nurturing Inner Peace, Joy, and Happiness\",\"description\":\"$13\",\"cover_image_url\":\"https://res.cloudinary.com/dpjpjlifw/image/upload/v1700668796/diademn-beauty/GetPaidStock.com_-653ab34a341d4_igracm.jpg\",\"createdAt\":\"$D2023-11-22T15:59:59.349Z\",\"updatedAt\":\"$D2023-11-22T15:59:59.349Z\"},{\"id\":\"5c0c5115-9d5a-479d-90da-627f036caca6\",\"title\":\"Healing and the Self: Nurturing the Delicate Core\",\"description\":\"$14\",\"cover_image_url\":\"https://res.cloudinary.com/dpjpjlifw/image/upload/v1700668709/diademn-beauty/1_e2s1jk.jpg\",\"createdAt\":\"$D2023-11-22T15:58:28.943Z\",\"updatedAt\":\"$D2023-11-22T15:58:28.943Z\"}]}]]}],[\"$\",\"$L15\",null,{}]]\n"])</script>
+    <script>self.__next_f.push([1, ""])</script><next-route-announcer style="position: absolute;"><template
+            shadowrootmode="open">
+            <div aria-live="assertive" id="__next-route-announcer__" role="alert"
+                style="position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;">
+            </div>
+        </template></next-route-announcer>
+    <div id="headlessui-portal-root">
+        <div data-headlessui-portal="">
+            <div></div>
+        </div>
+    </div>
 </body>
 
 </html>
